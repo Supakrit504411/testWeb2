@@ -56,9 +56,14 @@
             width: 30%;
             padding: 20px;
         }
-        .youtube-container iframe, .looker-container iframe {
+        .youtube-container iframe {
             width: 100%;
-            height: 300px;
+            height: 400px; /* กำหนดความสูงของ iframe ใน youtube-container */
+            border: none;
+        }
+        .looker-container iframe {
+            width: 100%;
+            height: 500px; /* กำหนดความสูงของ iframe ใน looker-container */
             border: none;
         }
         .looker-container {
@@ -123,7 +128,7 @@
     </style>
 </head>
 <body>
-    <div class="header">PEA NPN</div>
+    <div class="header">แผนกบริการและลูกค้าสัมพันธ์ กฟส.เมืองนครพนม</div>
     
     <div class="container">
         <div class="left">
@@ -139,11 +144,13 @@
                 <div class="looker-title">Dashboard 1-KPIs ผบส&ผบค ในสังกัด</div>
                 <iframe src="https://lookerstudio.google.com/embed/reporting/37f35bed-8ca3-44fd-9a88-4ef8d222d5db/page/p_n1rtfwprod"></iframe>
             </div>
+ <!-- ข้อความข้อมูล -->
+            <div class="info-title">ข้อมูล</div>
             <div class="looker-container">
                 <div class="looker-title">Dashboard 2-VOC เสียงของลูกค้า </div>
                 <iframe src="https://lookerstudio.google.com/embed/reporting/37f35bed-8ca3-44fd-9a88-4ef8d222d5db/page/p_l9p9j946od"></iframe>
             </div>
-            <div class="looker-container">
+           <!-- <div class="looker-container">
                 <div class="looker-title">Dashboard 3-ยื่นขอขนาน PPIM</div>
                 <iframe src="https://lookerstudio.google.com/embed/reporting/37f35bed-8ca3-44fd-9a88-4ef8d222d5db/page/p_lpizw7b8od"></iframe>
             </div>
@@ -154,7 +161,7 @@
             <div class="looker-container">
                 <div class="looker-title">Dashboard 5-รายได้ธุรกิจเกี่ยวเนื่อง 7 ประเภท</div>
                 <iframe src="https://lookerstudio.google.com/embed/reporting/37f35bed-8ca3-44fd-9a88-4ef8d222d5db/page/p_u7pdbqq3od"></iframe>
-            </div>
+            </div> -->
         </div>
         
         <div class="right">
@@ -177,7 +184,7 @@
             <div class="side-link-container">
                 <div class="side-link-item">
                     <iframe src="https://test-alert2.vercel.app/" title="test"></iframe>
-                    <a href="https://example.com" target="_blank"></a>Test</a>
+                    <a href="https://example.com" target="_blank">Test</a>
                 </div>
                 <div class="side-link-item">
                     <iframe src="https://faketime-virid.vercel.app/" title="time"></iframe>
