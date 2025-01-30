@@ -44,10 +44,13 @@
             display: flex;
             width: 80%;
             margin-top: 20px;
+            justify-content: space-between;
         }
         .left {
             width: 70%;
             padding: 20px;
+            background: #333;
+            border-radius: 10px;
         }
         .right {
             width: 30%;
@@ -79,6 +82,44 @@
             font-size: 14px;
             color: gold;
         }
+        .info-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: gold;
+        }
+        .banner {
+            width: 30%; /* กำหนดความกว้างของแบนเนอร์ */
+            margin: 10px 0;
+        }
+        .side-link-container {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1); /* พื้นหลังสวยๆ */
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .side-link-item {
+            background: #444;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .side-link-item iframe {
+            width: 100%;
+            height: 250px; /* ความสูงของพื้นที่ iframe */
+            border-radius: 10px;
+        }
+        .side-link-item a {
+            margin-top: 10px;
+            color: gold;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -89,41 +130,60 @@
             <div class="youtube-container">
                 <iframe src="https://www.youtube.com/embed/F5oluJAoXCI" allowfullscreen></iframe>
             </div>
+            
+            <!-- ข้อความข้อมูล -->
+            <div class="info-title">ข้อมูล</div>
+            
+            <!-- แดชบอร์ด -->
+            <div class="looker-container">
+                <div class="looker-title">Dashboard 1-KPIs ผบส&ผบค ในสังกัด</div>
+                <iframe src="https://lookerstudio.google.com/embed/reporting/37f35bed-8ca3-44fd-9a88-4ef8d222d5db/page/p_n1rtfwprod"></iframe>
+            </div>
+            <div class="looker-container">
+                <div class="looker-title">Dashboard 2-VOC เสียงของลูกค้า </div>
+                <iframe src="https://lookerstudio.google.com/embed/reporting/37f35bed-8ca3-44fd-9a88-4ef8d222d5db/page/p_l9p9j946od"></iframe>
+            </div>
+            <div class="looker-container">
+                <div class="looker-title">Dashboard 3-ยื่นขอขนาน PPIM</div>
+                <iframe src="https://lookerstudio.google.com/embed/reporting/37f35bed-8ca3-44fd-9a88-4ef8d222d5db/page/p_lpizw7b8od"></iframe>
+            </div>
+            <div class="looker-container">
+                <div class="looker-title">Dashboard 4-สรุปงานที่รับผิดชอบ ผบส.</div>
+                <iframe src="https://test-alert2.vercel.app/"></iframe>
+            </div>
+            <div class="looker-container">
+                <div class="looker-title">Dashboard 5-รายได้ธุรกิจเกี่ยวเนื่อง 7 ประเภท</div>
+                <iframe src="YOUR_LOOKER_LINK"></iframe>
+            </div>
         </div>
+        
         <div class="right">
+            <!-- เพิ่มรูปประชาสัมพันธ์ -->
             <img src="https://i.postimg.cc/xjKg3fX3/PEA-A5.jpg" alt="ประชาสัมพันธ์" style="width: 100%; border-radius: 10px;">
-        </div>
-    </div>
-    
-    <div class="container">
-        <div class="left">
-            <div class="looker-container">
-                <div class="looker-title">Dashboard 1</div>
-                <iframe src="https://lookerstudio.google.com/u/0/reporting/37f35bed-8ca3-44fd-9a88-4ef8d222d5db/page/p_n1rtfwprod"></iframe>
+            
+            <!-- แบนเนอร์รูปภาพ -->
+            <div class="banner">
+                <img src="https://i.postimg.cc/qvfJVGJT/JPG-PEA-Motto-TH-CMYK-Original.jpg" alt="แบนเนอร์" style="width: 100%; border-radius: 10px;">
             </div>
-            <div class="looker-container">
-                <div class="looker-title">Dashboard 2</div>
-                <iframe src="https://lookerstudio.google.com/u/0/reporting/37f35bed-8ca3-44fd-9a88-4ef8d222d5db/page/p_l9p9j946od"></iframe>
-            </div>
-            <div class="looker-container">
-                <div class="looker-title">Dashboard 3</div>
-                <iframe src="https://lookerstudio.google.com/u/0/reporting/37f35bed-8ca3-44fd-9a88-4ef8d222d5db/page/p_lpizw7b8od"></iframe>
-            </div>
-            <div class="looker-container">
-                <div class="looker-title">Dashboard 4</div>
-                <iframe src="YOUR_LOOKER_LINK"></iframe>
-            </div>
-            <div class="looker-container">
-                <div class="looker-title">Dashboard 5</div>
-                <iframe src="YOUR_LOOKER_LINK"></iframe>
-            </div>
-        </div>
-        <div class="right">
+            
+            <!-- ลิงก์ -->
             <div class="link-container"> <a href="https://sabuyservice.pea.co.th/" style="color: gold;">sabuyservice</a> </div>
-            <div class="link-container"> <a href="LINK_2" style="color: gold;">ลิงก์ที่ 2</a> </div>
-            <div class="link-container"> <a href="LINK_3" style="color: gold;">ลิงก์ที่ 3</a> </div>
-            <div class="link-container"> <a href="LINK_4" style="color: gold;">ลิงก์ที่ 4</a> </div>
-            <div class="link-container"> <a href="LINK_5" style="color: gold;">ลิงก์ที่ 5</a> </div>
+            <div class="link-container"> <a href="https://www.pea.co.th/our-services/download/customer-guideline" style="color: gold;">คู่มือประชาชน</a> </div>
+            <div class="link-container"> <a href="https://peasolar.pea.co.th/package-lists/" style="color: gold;">Pea Solar Package</a> </div>
+            <div class="link-container"> <a href="https://www.pea.co.th/our-services/tariff" style="color: gold;">ตารางค่าธรรมเนียมการขอใช้ไฟฟ้า</a> </div>
+            <div class="link-container"> <a href="https://complaint.pea.co.th/" style="color: gold;">แนะนำ-ติชม</a> </div>
+
+            <!-- พื้นที่ข้างๆ (ฝังลิงก์แบบฝัง) ในพื้นที่ 30% -->
+            <div class="side-link-container">
+                <div class="side-link-item">
+                    <iframe src="https://test-alert2.vercel.app/" title="test"></iframe>
+                    <a href="https://example.com" target="_blank">ฝังลิงก์ที่ 1</a>
+                </div>
+                <div class="side-link-item">
+                    <iframe src="https://faketime-virid.vercel.app/" title="time"></iframe>
+                    <a href="https://example2.com" target="_blank">ฝังลิงก์ที่ 2</a>
+                </div>
+            </div>
         </div>
     </div>
     
